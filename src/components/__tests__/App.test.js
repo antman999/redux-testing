@@ -3,12 +3,19 @@ import ReactDOM from 'react-dom'
 import App from '../App'
 
 test('should render the comment box component', () => {
-  const div = document.create('div')
+  const div = document.createElement('div')
  
   ReactDOM.render(<App />, div)
   //When we do this We take our app component and take the html and try to render it in the div we created
   //So below we can write more logic to test certain behavior
+    expect(div.innerHTML).toContain('comment box!')
+  //  ^          ^             ^              ^
+  //function| value inspecting| how to inspect|Value we want to see
 
+  //We should avoid our test to know of the components internal works such as text. 
+  //It is fine if it knows that it exist overall
+  
+  //We will instal enzyme to help us check components a bit easier ^ (Library by Airbnb)
 
 
   ReactDOM.unmountComponentAtNode(div)
