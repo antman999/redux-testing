@@ -23,7 +23,7 @@ test('should render the comment box component', () => {
   // //We should avoid our test to know of the components internal works such as text. 
   // //It is fine if it knows that it exist overall
   
-  // //We will instal enzyme to help us check components a bit easier ^ (Library by Airbnb)
+  // //We will install enzyme to help us check components a bit easier ^ (Library by Airbnb)
 
   // //Check readme screenshot for what Shallow,Static and fullDOM do 
   // //We will use shallow to find that CommentBox is there and atleast has a length of 1 
